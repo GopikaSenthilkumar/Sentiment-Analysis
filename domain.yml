@@ -1,0 +1,51 @@
+version: "3.1"
+
+intents:
+  - express_happiness
+  - express_sadness
+  - express_anger
+  - express_stress
+  - express_surprise
+  - express_loneliness
+  - greet
+  - goodbye
+  - fallback
+
+responses:
+  utter_greet:
+    - text: "👋 Hello! How can I assist you today?"
+  
+  utter_goodbye:
+    - text: "👋 Goodbye! Have a great day!"
+  
+  utter_happiness:
+    - text: "😊 You seem really happy! Here's a video for you: [Watch this](https://www.youtube.com/watch?v=FQDa6jJpmdA)"
+  
+  utter_sadness:
+    - text: "😢 I detected sadness. Hope this helps: [Watch this](https://www.youtube.com/watch?v=zgq4qpVOhAk)"
+  
+  utter_anger:
+    - text: "😡 I sense some anger. Try this to calm down: [Watch this](https://www.youtube.com/watch?v=gBfZd9fYEjw)"
+  
+  utter_stress:
+    - text: "😌 Feeling stressed? Try this for relaxation: [Watch this](https://www.youtube.com/watch?v=xPnvhgVsDlE)"
+  
+  utter_surprise:
+    - text: "😲 Surprised? Here's something interesting: [Watch this](https://www.youtube.com/shorts/neyYOeah1jQ)"
+  
+  utter_loneliness:
+    - text: "💙 Feeling lonely? This might help: [Watch this](https://www.youtube.com/watch?v=ZGz35cDXFqo)"
+  
+  utter_fallback:
+    - text: "🤔 I may not know your emotion for this, but this might interest you: [Watch this](https://www.youtube.com/)"
+
+actions:
+  - utter_greet
+  - utter_goodbye
+  - utter_happiness
+  - utter_sadness
+  - utter_anger
+  - utter_stress
+  - utter_surprise
+  - utter_loneliness
+  - utter_fallback
